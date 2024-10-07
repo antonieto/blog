@@ -1,0 +1,15 @@
+import type {FC} from "react";
+
+interface Props extends React.SVGProps<SVGSVGElement> {};
+
+const Hamb: FC<Props> = (props) => {
+	return (
+		<svg {...props} width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<rect x="5" y="16.2" width="14" height="1.6" rx="0.8" fill="#0D0B26" />
+			<rect x="5" y="11.2" width="14" height="1.6" rx="0.8" fill="#0D0B26" />
+			<rect x="5" y="6.2" width="14" height="1.6" rx="0.8" fill="#0D0B26" />
+		</svg>
+	)
+};
+
+export default Hamb;
