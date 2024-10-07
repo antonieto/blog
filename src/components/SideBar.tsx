@@ -1,28 +1,28 @@
 import {getCollection} from "astro:content";
-import {useState} from "react";
-import {motion} from "framer-motion";
-import Hamb from "./Hamb";
 
 const blogs = await getCollection('blog');
 
 const SideBar = () => {
-	const [visible, setVisible] = useState(true);
 
 	return (
 		<>
-			<nav className="md:absolute left-0 top-0 h-full  min-w-max p-6">
-				<button
-					className="hover:cursor-pointer hover:bg-gruvbox-bg_statusline-3 w-full flex justify-center mb-2 rounded-md *:fill-blue-400"
-					type="button"
-					onClick={() => setVisible(!visible)}>
-					<Hamb className="text-red-500" />
-				</button>
-				<motion.div
-					initial={{x: '0%'}}
-					animate={{x: visible ? 0 : '-200%'}}
-					transition={{duration: 0.3, ease: 'easeInOut'}}
+			<div className="hidden xl:block absolute left-0 top-0 h-full  min-w-max p-6">
+
+				<aside
 					className="bg-gruvbox-bg_statusline-3 shadow-lg w-full max-w-[20rem] h-full rounded-md"
 				>
+					<div className="px-2 py-4">
+						<p className="font-bold">
+							José Antonio Chaires Monroy
+						</p>
+						<p className="text-sm">Production Engineer @ Meta</p>
+						<p className="text-sm">New York City, NY</p>
+						<a className="text-sm underline" href="mailto:antonioch.mon@gmail.com">
+							antonioch.mon@gmail.com
+						</a>
+					</div>
+
+					<div className="w-full border-b-[1px] border-gruvbox-grey-0" />
 					<ul className="flex py-4 px-12 flex-col gap-4">
 						{blogs.map(b => (
 							<li className="underline text-gruvbox-purple">
@@ -31,8 +31,8 @@ const SideBar = () => {
 						))}
 					</ul>
 
-				</motion.div>
-			</nav >
+				</aside>
+			</div >
 		</>
 
 	);
