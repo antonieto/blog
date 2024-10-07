@@ -1,7 +1,7 @@
 
 const Header = () => {
 	return (
-		<header className="m-4">
+		<header className="m-4 mb-10">
 			<h1 className="text-5xl font-bold text-gruvbox-aqua">
 				Antonio Chaires
 
@@ -9,7 +9,7 @@ const Header = () => {
 			<nav>
 				<ul className="flex justify-center gap-6 underline hover:cursor-pointer ">
 					<li>
-						<a>
+						<a href="/">
 							Posts
 						</a>
 					</li>

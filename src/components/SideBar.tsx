@@ -6,7 +6,7 @@ import Hamb from "./Hamb";
 const blogs = await getCollection('blog');
 
 const SideBar = () => {
-	const [visible, setVisible] = useState(false);
+	const [visible, setVisible] = useState(true);
 
 	return (
 		<>
@@ -18,15 +18,15 @@ const SideBar = () => {
 					<Hamb className="text-red-500" />
 				</button>
 				<motion.div
-					initial={{x: '-100%'}}
+					initial={{x: '0%'}}
 					animate={{x: visible ? 0 : '-200%'}}
 					transition={{duration: 0.3, ease: 'easeInOut'}}
-					className="bg-gruvbox-bg_statusline-3 shadow-lg w-full h-full rounded-md"
+					className="bg-gruvbox-bg_statusline-3 shadow-lg w-full max-w-[20rem] h-full rounded-md"
 				>
 					<ul className="flex py-4 px-12 flex-col gap-4">
 						{blogs.map(b => (
 							<li className="underline text-gruvbox-purple">
-								<a href={`/blogs/${b.slug}`}>{b.slug}</a>
+								<a href={`/blogs/${b.slug}`}>{b.data.title}</a>
 							</li>
 						))}
 					</ul>
