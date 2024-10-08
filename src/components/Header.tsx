@@ -14,7 +14,7 @@ const Header = () => {
 						</a>
 					</li>
 					<li>
-						<a>
+						<a href="/me">
 							Me
 						</a>
 					</li>

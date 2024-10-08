@@ -1,10 +1,11 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import BlogCard from "../components/BlogCard";
+import Prose from "../components/Prose";
+
 import { getCollection } from "astro:content";
 import { getEntry } from "astro:content";
 import { render } from "astro:content";
-
 const blogs = await getCollection("blog");
 
 const intro = await getEntry("simple", "intro");
@@ -13,11 +14,9 @@ const { Content: Intro } = await render(intro);
 
 <Layout title="Antonio's Blog">
 	<main class="">
-		<div
-			class="prose  max-w-none my-4 w-full prose-div:w-full text-gruvbox-fg-1"
-		>
-				<Intro class="w-full" />
-		</div>
+		<Prose>
+			<Intro class="w-full" />
+		</Prose>
 		<div class="flex flex-col gap-4">
 			{
 				blogs.map(({ slug, data: { title, date, summary } }) => (
