@@ -20,11 +20,21 @@ const { title } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body class="bg-gruvbox-bg-dim">
-		<div class="flex w-full">
-			<SideBar client:load />
-			<div class="flex w-full flex-col items-center">
-				<Header />
-				<slot class="w-full" />
+		<SideBar client:load />
+		<div
+			class="flex w-screen flex-col justify-center items-center max-h-screen"
+		>
+			<Header />
+			<div
+				class={"overflow-y-auto px-4 max-w-[60rem]" +
+					" [&::-webkit-scrollbar]:w-2" +
+					" [&::-webkit-scrollbar-track]:rounded-full" +
+					" [&::-webkit-scrollbar-track]:bg-gruvbox-bg-dim" +
+					" [&::-webkit-scrollbar-thumb]:rounded-full" +
+					" [&::-webkit-scrollbar-thumb]:bg-gruvbox-grey-2" +
+					" "}
+			>
+				<slot />
 			</div>
 		</div>
 	</body>

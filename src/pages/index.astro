@@ -11,14 +11,12 @@ const intro = await getEntry("simple", "intro");
 const { Content: Intro } = await render(intro);
 ---
 
-<Layout title="Welcome to Astro.">
-	<main class="max-w-[90%]">
+<Layout title="Antonio's Blog">
+	<main class="">
 		<div
-			class="prose min-w-full my-4 w-full prose-div:w-full text-gruvbox-fg-1"
+			class="prose  max-w-none my-4 w-full prose-div:w-full text-gruvbox-fg-1"
 		>
-			<div class="w-full">
 				<Intro class="w-full" />
-			</div>
 		</div>
 		<div class="flex flex-col gap-4">
 			{
