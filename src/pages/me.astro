@@ -1,13 +1,13 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Prose from "../components/Prose";
-import { Content } from "../components/Me.md";
+import { Content, getHeadings } from "../components/Me.md";
+import BlogEntry from "../components/BlogEntry";
+
+const headings = getHeadings();
 ---
 
 <Layout title="About me">
-	<div class="flex justify-center w-full">
-		<Prose>
-			<Content />
-		</Prose>
-	</div>
+	<BlogEntry headings={headings} client:load>
+		<Content />
+	</BlogEntry>
 </Layout>

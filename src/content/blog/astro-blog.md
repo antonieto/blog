@@ -15,4 +15,3 @@ Rust is on its own a beast of a language if you're not very familiar with memory
 
 - A web (HTTP) server
 - A markdown parser
-

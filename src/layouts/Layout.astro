@@ -25,17 +25,7 @@ const { title } = Astro.props;
 			class="flex w-screen flex-col justify-center items-center max-h-screen pb-10"
 		>
 			<Header />
-			<div
-				class={"overflow-y-auto px-4 max-w-[60rem]" +
-					" [&::-webkit-scrollbar]:w-2" +
-					" [&::-webkit-scrollbar-track]:rounded-full" +
-					" [&::-webkit-scrollbar-track]:bg-gruvbox-bg-dim" +
-					" [&::-webkit-scrollbar-thumb]:rounded-full" +
-					" [&::-webkit-scrollbar-thumb]:bg-gruvbox-grey-2" +
-					" "}
-			>
-				<slot />
-			</div>
+			<slot />
 		</div>
 	</body>
 </html>

@@ -15,11 +15,11 @@ const { slug } = Astro.params;
 
 const blog = await getEntry("blog", slug);
 
-const { Content } = await render(blog);
+const { Content, headings } = await render(blog);
 ---
 
 <Layout title={blog.data.title}>
-	<BlogEntry>
+	<BlogEntry headings={headings} client:load>
 		<Content />
 	</BlogEntry>
 </Layout>
