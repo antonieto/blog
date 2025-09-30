@@ -13,5 +13,10 @@ type HeadingTree = {
 }
 
 export function buildTable(headings: ContentEntry[]): HeadingTree {
+	return {
+		slug: 'something',
+		text: 'something',
+		children: []
+	}
 	
 }
