@@ -2,7 +2,7 @@
 const Header = () => {
 	return (
 		<header className="m-4 mb-10">
-			<h1 className="text-5xl font-bold text-gruvbox-aqua">
+			<h1 className="text-5xl font-bold text-theme-aqua">
 				Antonio Chaires
 
 			</h1>

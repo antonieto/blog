@@ -12,9 +12,9 @@ const BlogCard: FC<Props> = ({
 	summary,
 }) => {
 	return (
-		<div className="bg-gruvbox-bg_statusline-3 hover:bg-gruvbox-bg_visual-yellow p-4 rounded-md hover:shadow-md hover:cursor-pointer">
-			<h3 className="text-gruvbox-red font-bold text-lg">{title}</h3>
-			<span className="text-sm text-gruvbox-grey-1">{date}</span>
+		<div className="bg-theme-bg_statusline-3 hover:bg-theme-bg_visual-yellow p-4 rounded-md hover:shadow-md hover:cursor-pointer">
+			<h3 className="text-theme-red font-bold text-lg">{title}</h3>
+			<span className="text-sm text-theme-grey-1">{date}</span>
 			<p>{summary}</p>
 		</div>
 	)

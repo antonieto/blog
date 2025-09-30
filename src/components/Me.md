@@ -22,4 +22,4 @@ I am very passionate about the web. The vast majority of my experience with prog
 
 I had the amazing oportunity to take a __Compilers Design__ class during an exchange semester in Spain and fell in love with the topic. I developed a [compiler](https://github.com/antonieto/plc-compiler) for a pretty high level and basic language called __PLC__ (will describe the process in another post), a couple of Java libraries. If life gives me a chance, I would love to do research in this area.
 
-In the recent months, I fell victim to FOMO due to all the crazy stuff going on with AI, which led me to become very interested in the math and the technologies behind it. In fact, my role at Meta is under the AI umbrella of the company and work in infrastructure development for PyTorch.
+In the recent months, I fell victim to FOMO due to all the crazy stuff going on with AI, which led me to become very interested in the math and the technologies behind it. In fact, I work in what we define as AI infra at Meta.

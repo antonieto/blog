@@ -38,9 +38,9 @@ const BlogEntry: FC<{children: ReactNode, headings: ContentEntry[]}> = ({childre
 			className={"overflow-y-auto px-4 max-w-[60rem]" +
 				" [&::-webkit-scrollbar]:w-2" +
 				" [&::-webkit-scrollbar-track]:rounded-full" +
-				" [&::-webkit-scrollbar-track]:bg-gruvbox-bg-dim" +
+				" [&::-webkit-scrollbar-track]:bg-theme-bg-dim" +
 				" [&::-webkit-scrollbar-thumb]:rounded-full" +
-				" [&::-webkit-scrollbar-thumb]:bg-gruvbox-grey-2" +
+				" [&::-webkit-scrollbar-thumb]:bg-theme-grey-2" +
 				" "}
 
 		>
