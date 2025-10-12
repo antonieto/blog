@@ -17,3 +17,4 @@ Rust is on its own a beast of a language if you're not very familiar with memory
 - A markdown parser.
 
 
+I actually managed to get [something going](https://github.com/antonieto/markdown-server/tree/main), which is basically an http server that can be configured off a GitHub URL (such as the one holding this repository), discovers the entire file tree on the given branch name and renders the markdown content.
