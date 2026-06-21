@@ -1,0 +1,38 @@
+/* Kanagawa Wave — Base16
+   Source: https://github.com/tinted-theming/base16-schemes */
+
+:root {
+  --base00: #1F1F28;
+  --base01: #16161D;
+  --base02: #223249;
+  --base03: #54546D;
+  --base04: #727169;
+  --base05: #DCD7BA;
+  --base06: #C8C093;
+  --base07: #717C7C;
+  --base08: #C34043;
+  --base09: #FFA066;
+  --base0A: #C0A36E;
+  --base0B: #76946A;
+  --base0C: #6A9589;
+  --base0D: #7E9CD8;
+  --base0E: #957FB8;
+  --base0F: #D27E99;
+
+  /* Semantic mappings */
+  --color-bg:           var(--base00);
+  --color-surface:      var(--base01);
+  --color-surface-hover:var(--base02);
+  --color-border:       var(--base03);
+  --color-fg:           var(--base05);
+  --color-fg-muted:     var(--base03);
+  --color-scrollbar:    var(--base04);
+  --color-red:          var(--base08);
+  --color-orange:       var(--base09);
+  --color-yellow:       var(--base0A);
+  --color-green:        var(--base0B);
+  --color-aqua:         var(--base0C);
+  --color-blue:         var(--base0D);
+  --color-purple:       var(--base0E);
+  --color-accent:       var(--base0D);
+}

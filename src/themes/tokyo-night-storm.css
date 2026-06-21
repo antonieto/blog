@@ -1,0 +1,38 @@
+/* Tokyo Night Storm — Base16
+   Source: https://github.com/tinted-theming/base16-schemes */
+
+:root {
+  --base00: #24283B;
+  --base01: #16161E;
+  --base02: #343A52;
+  --base03: #444B6A;
+  --base04: #787C99;
+  --base05: #A9B1D6;
+  --base06: #CBCCD1;
+  --base07: #D5D6DB;
+  --base08: #C0CAF5;
+  --base09: #A9B1D6;
+  --base0A: #0DB9D7;
+  --base0B: #9ECE6A;
+  --base0C: #B4F9F8;
+  --base0D: #2AC3DE;
+  --base0E: #BB9AF7;
+  --base0F: #F7768E;
+
+  /* Semantic mappings */
+  --color-bg:           var(--base00);
+  --color-surface:      var(--base01);
+  --color-surface-hover:var(--base02);
+  --color-border:       var(--base03);
+  --color-fg:           var(--base05);
+  --color-fg-muted:     var(--base04);
+  --color-scrollbar:    var(--base04);
+  --color-red:          var(--base0F);
+  --color-orange:       var(--base09);
+  --color-yellow:       var(--base0A);
+  --color-green:        var(--base0B);
+  --color-aqua:         var(--base0C);
+  --color-blue:         var(--base0D);
+  --color-purple:       var(--base0E);
+  --color-accent:       var(--base0E);
+}

@@ -1,0 +1,38 @@
+/* One Dark — Base16
+   Source: https://github.com/tinted-theming/base16-schemes */
+
+:root {
+  --base00: #282c34;
+  --base01: #353b45;
+  --base02: #3e4451;
+  --base03: #545862;
+  --base04: #565c64;
+  --base05: #abb2bf;
+  --base06: #b6bdca;
+  --base07: #c8ccd4;
+  --base08: #e06c75;
+  --base09: #d19a66;
+  --base0A: #e5c07b;
+  --base0B: #98c379;
+  --base0C: #56b6c2;
+  --base0D: #61afef;
+  --base0E: #c678dd;
+  --base0F: #be5046;
+
+  /* Semantic mappings */
+  --color-bg:           var(--base00);
+  --color-surface:      var(--base01);
+  --color-surface-hover:var(--base02);
+  --color-border:       var(--base03);
+  --color-fg:           var(--base05);
+  --color-fg-muted:     var(--base04);
+  --color-scrollbar:    var(--base04);
+  --color-red:          var(--base08);
+  --color-orange:       var(--base09);
+  --color-yellow:       var(--base0A);
+  --color-green:        var(--base0B);
+  --color-aqua:         var(--base0C);
+  --color-blue:         var(--base0D);
+  --color-purple:       var(--base0E);
+  --color-accent:       var(--base0D);
+}

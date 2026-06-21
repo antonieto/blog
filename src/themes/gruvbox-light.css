@@ -1,0 +1,38 @@
+/* Gruvbox Light — Base16
+   Source: https://github.com/tinted-theming/base16-schemes */
+
+:root {
+  --base00: #F9F5D7;
+  --base01: #EEE0B7;
+  --base02: #F3EAC7;
+  --base03: #A89984;
+  --base04: #7C6F64;
+  --base05: #514036;
+  --base06: #514036;
+  --base07: #EBDBB2;
+  --base08: #AF2528;
+  --base09: #B94C07;
+  --base0A: #B4730E;
+  --base0B: #72761E;
+  --base0C: #477A5B;
+  --base0D: #266B79;
+  --base0E: #924F79;
+  --base0F: #B94C07;
+
+  /* Semantic mappings */
+  --color-bg:           var(--base00);
+  --color-surface:      var(--base01);
+  --color-surface-hover:var(--base07);
+  --color-border:       var(--base03);
+  --color-fg:           var(--base05);
+  --color-fg-muted:     var(--base03);
+  --color-scrollbar:    var(--base04);
+  --color-red:          var(--base08);
+  --color-orange:       var(--base09);
+  --color-yellow:       var(--base0A);
+  --color-green:        var(--base0B);
+  --color-aqua:         var(--base0C);
+  --color-blue:         var(--base0D);
+  --color-purple:       var(--base0E);
+  --color-accent:       var(--base0C);
+}

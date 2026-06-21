@@ -9,7 +9,7 @@ const SideBar = () => {
 			<div className="hidden xl:block absolute left-0 top-0 h-full  min-w-max p-6">
 
 				<aside
-					className="bg-theme-bg_statusline-3 shadow-lg w-full max-w-[20rem] h-full rounded-md"
+					className="bg-surface shadow-lg w-full max-w-[20rem] h-full rounded-md"
 				>
 					<div className="px-2 py-4">
 						<p className="font-bold">
@@ -22,10 +22,10 @@ const SideBar = () => {
 						</a>
 					</div>
 
-					<div className="w-full border-b-[1px] border-theme-grey-0" />
+					<div className="w-full border-b-[1px] border-border" />
 					<ul className="flex py-4 px-12 flex-col gap-4">
 						{blogs.map(b => (
-							<li className="underline text-theme-purple">
+							<li className="underline text-purple">
 								<a href={`/blogs/${b.slug}`}>{b.data.title}</a>
 							</li>
 						))}

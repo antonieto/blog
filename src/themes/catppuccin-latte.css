@@ -1,0 +1,38 @@
+/* Catppuccin Latte — Base16
+   Source: https://github.com/tinted-theming/base16-schemes */
+
+:root {
+  --base00: #EFF1F5;
+  --base01: #E6E9EF;
+  --base02: #CCD0DA;
+  --base03: #9CA0B0;
+  --base04: #6C6F85;
+  --base05: #4C4F69;
+  --base06: #DC8A78;
+  --base07: #DCE0E8;
+  --base08: #D20F39;
+  --base09: #FE640B;
+  --base0A: #DF8E1D;
+  --base0B: #40A02B;
+  --base0C: #179299;
+  --base0D: #1E66F5;
+  --base0E: #8839EF;
+  --base0F: #E64553;
+
+  /* Semantic mappings */
+  --color-bg:           var(--base00);
+  --color-surface:      var(--base01);
+  --color-surface-hover:var(--base02);
+  --color-border:       var(--base03);
+  --color-fg:           var(--base05);
+  --color-fg-muted:     var(--base04);
+  --color-scrollbar:    var(--base04);
+  --color-red:          var(--base08);
+  --color-orange:       var(--base09);
+  --color-yellow:       var(--base0A);
+  --color-green:        var(--base0B);
+  --color-aqua:         var(--base0C);
+  --color-blue:         var(--base0D);
+  --color-purple:       var(--base0E);
+  --color-accent:       var(--base0D);
+}

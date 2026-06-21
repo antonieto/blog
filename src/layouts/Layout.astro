@@ -1,6 +1,7 @@
 ---
 import SideBar from "../components/SideBar";
 import Header from "../components/Header";
+import "../themes/kanagawa.css";
 
 interface Props {
 	title: string;
@@ -29,7 +30,7 @@ const { title } = Astro.props;
 		  gtag('config', 'G-3FSY2RMPVC');
 		</script>
 	</head>
-	<body class="bg-theme-bg-dim">
+	<body class="bg-bg">
 		<SideBar client:load />
 		<div
 			class="flex w-screen flex-col justify-center items-center max-h-screen pb-10"
@@ -40,20 +41,9 @@ const { title } = Astro.props;
 	</body>
 </html>
 <style is:global>
-	:root {
-		--accent: 136, 58, 234;
-		--accent-light: 224, 204, 250;
-		--accent-dark: 49, 10, 101;
-		--accent-gradient: linear-gradient(
-			45deg,
-			rgb(var(--accent)),
-			rgb(var(--accent-light)) 30%,
-			white 60%
-		);
-	}
 	html {
 		font-family: monospace;
-		color: #514036;
+		color: var(--color-fg);
 	}
 	code {
 		font-family:
