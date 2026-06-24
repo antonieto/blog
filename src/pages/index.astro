@@ -15,9 +15,9 @@ const { Content: Intro } = await render(intro);
 <Layout title="Antonio's Blog">
 	<main class="max-w-[60rem]">
 		<Prose>
-			<Intro class="w-full" />
+			<Intro class="w-full"  />
 		</Prose>
-		<div class="flex flex-col gap-4">
+		<div class="flex flex-col gap-4 my-4">
 			{
 				blogs.map(({ slug, data: { title, date, summary } }) => (
 					<a href={`/blogs/${slug}`}>
